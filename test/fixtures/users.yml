@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+david:
+  firstName: David
+  lastName: Doe
+  email: david.doe@email.fr
+  password_digest: azerty
+
+sarah:
+  firstName: Steve
+  lastName: Smith
+  email: steve.smith@email.fr
+  password_digest: ytreza
