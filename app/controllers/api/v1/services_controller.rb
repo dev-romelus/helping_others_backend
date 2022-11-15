@@ -42,7 +42,7 @@ class Api::V1::ServicesController < ApplicationController
   
     private
       def service_params
-        params.require(:service).permit(:title, :description, :request_type, :latitude, :longitude, :status, :user_id)
+        params.permit(:title, :description, :request_type, :latitude, :longitude, :status, :user_id)
       end
     
       def set_service
