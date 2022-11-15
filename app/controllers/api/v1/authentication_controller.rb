@@ -23,7 +23,7 @@ class Api::V1::AuthenticationController < ApplicationController
 
     private
         def user_params
-            params.permit(:firstName, :lastName, :email, :password, :identityDocument)
+            params.permit(:lastName, :firstName, :email, :password, :filename, :identity_document_url)
         end
 
 end
