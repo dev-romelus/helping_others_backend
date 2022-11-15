@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  default_url_options :host => "https://helping-others.herokuapp.com"
+  default_url_options :host => 'https://helping-others.herokuapp.com'
   namespace :api do
     namespace :v1, defaults: { format: :json } do
       resources :users
