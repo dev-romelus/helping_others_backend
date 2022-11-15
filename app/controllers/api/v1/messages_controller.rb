@@ -22,7 +22,7 @@ class Api::V1::MessagesController < ApplicationController
 
     private
       def message_params
-        params.require(:message).permit(:body, :user_id, :conversation_id, :service_id)
+        params.permit(:body, :user_id, :conversation_id, :service_id)
       end
 end
   
