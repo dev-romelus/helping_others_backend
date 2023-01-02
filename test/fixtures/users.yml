@@ -4,10 +4,10 @@ david:
   firstName: David
   lastName: Doe
   email: david.doe@email.fr
-  password_digest: azerty
+  password_digest: <%= User.digest('password') %>
 
 sarah:
   firstName: Steve
   lastName: Smith
   email: steve.smith@email.fr
-  password_digest: ytreza
+  password_digest: <%= User.digest('password') %>

@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+service:
+  title: Assembly a bed
+  description: Hello, I need help to assemble a bed
+  request_type: occasional_tasks
+  latitude: 48.85
+  longitude: 2.29
+  status: IN_PROGRESS
+  user_id: 1
+

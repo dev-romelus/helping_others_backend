@@ -6,7 +6,7 @@ class Api::V1::AuthenticationController < ApplicationController
             token = jwt_encode({ user_id: @user.id })
             render json: { token: token, user: @user }, status: 200
         else
-            render json: { message: 'Your email or password invalid.' }, status: :unauthorized
+            render json: { error: 'Your email or password invalid.' }, status: :unauthorized
         end
     end
 

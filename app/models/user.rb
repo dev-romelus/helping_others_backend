@@ -1,11 +1,11 @@
 class User < ApplicationRecord
     has_secure_password
     has_many :services
-    # has_one_attached :identityDocument
 
     validates :email, :presence => true, uniqueness: true
 
-    # def identity_document
-    #     Rails.application.routes.url_helpers.url_for(identityDocument) if identityDocument.attached?
-    # end
+    def User.digest(string)
+        cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
+        BCrypt::Password.create(string, cost: cost)
+    end
 end

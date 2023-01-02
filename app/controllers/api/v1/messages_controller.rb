@@ -16,7 +16,9 @@ class Api::V1::MessagesController < ApplicationController
       @message = @conversation.messages.new(message_params)
       @message.user = @current_user
       if @message.save
-        render json: { message: @message }
+        render json: { message: @message }, status: 200
+      else
+        render json: { error: 'Unable to create message.' }, status: :bad_request
       end
     end
 

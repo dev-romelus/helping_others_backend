@@ -4,8 +4,3 @@ memo:
   receiver_id: 2
   service_id: 3
 
-shift:
-  sender_id: 4
-  receiver_id: 5
-  service_id: 6
-

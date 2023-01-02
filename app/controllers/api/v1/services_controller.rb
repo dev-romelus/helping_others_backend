@@ -34,7 +34,7 @@ class Api::V1::ServicesController < ApplicationController
       @service = Service.find(params[:id])
       if @service
         @service.destroy
-        render json: { error: 'Unable to create service.' }, status: 200
+        render json: { message: 'The service has been deleted.' }, status: 200
       else
         render json: { error: 'Unable to delete service.' }, status: 400
       end
